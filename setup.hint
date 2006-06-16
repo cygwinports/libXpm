@@ -1,0 +1,4 @@
+category: X11 Graphics
+requires: cygwin libX11-devel xproto
+sdesc: "Xorg X Pixmap library (development)"
+ldesc: "Xorg X Pixmap library"
