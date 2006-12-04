@@ -3,26 +3,26 @@ libXpm
 Xorg X Pixmap library and utilities
 
 Runtime requirements:
-  cygwin-1.5.20-1
-  libX11_6-1.0.1-1
-  libXext6-1.0.1-1 *
-  libXt6-1.0.2-1 *
+  cygwin-1.5.22-1
+  libX11_6-1.1.1-1
+  * libXext6-1.0.2-1
+  * libXt6-1.0.4-1
 (*) only required for sxpm
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.20-1
-  autoconf2.5-2.59-2
+  cygwin-1.5.22-1
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.2-1
+  binutils-20060817-1
+  cygport-0.2.6-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  libtool1.5-1.5.22-1
-  make-3.80-1
-  pkg-config-0.20-1
+  libtool1.5-1.5.23a-1
+  make-3.81-1
+  pkg-config-0.21-1
   sed-4.1.5-1
-  xorg-util-macros-1.0.2-1
+  xorg-util-macros-1.1.2-1
 
 Canonical website:
   http://xorg.freedesktop.org/
@@ -33,42 +33,44 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libXpm-3.5.5-X-src.tar.bz2
+  unpack libXpm-3.5.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libXpm-3.5.5-X.cygport all
+  cygport ./libXpm-3.5.6-X.cygport all
 
 This will create:
-  /usr/src/libXpm-3.5.5-X-src.tar.bz2
-  /usr/src/libXpm-3.5.5-X.tar.bz2
-  /usr/src/libXpm4-3.5.5-X.tar.bz2
-  /usr/src/sxpm-3.5.5-X.tar.bz2
+  /usr/src/libXpm-3.5.6-X-src.tar.bz2
+  /usr/src/libXpm-3.5.6-X.tar.bz2
+  /usr/src/libXpm-devel-3.5.6-X.tar.bz2
+  /usr/src/libXpm4-3.5.6-X.tar.bz2
+  /usr/src/sxpm-3.5.6-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(libXpm)
+  /usr/share/doc/Cygwin/libXpm-3.5.6.README
+  /usr/share/doc/libXpm-3.5.6/AUTHORS
+  /usr/share/doc/libXpm-3.5.6/COPYING
+  /usr/share/doc/libXpm-3.5.6/COPYRIGHT
+  /usr/share/doc/libXpm-3.5.6/ChangeLog
+  /usr/share/doc/libXpm-3.5.6/Changes
+  /usr/share/doc/libXpm-3.5.6/INSTALL
+  /usr/share/doc/libXpm-3.5.6/html/FAQ.html
+  /usr/share/doc/libXpm-3.5.6/html/README.html
+
+(libXpm4)
+  /usr/bin/cygXpm-4.dll
+
+(libXpm-devel)
   /usr/include/X11/xpm.h
   /usr/lib/libXpm.dll.a
   /usr/lib/libXpm.la
   /usr/lib/pkgconfig/xpm.pc
-  /usr/share/doc/Cygwin/libXpm-3.5.5.README
-  /usr/share/doc/libXpm-3.5.5/AUTHORS
-  /usr/share/doc/libXpm-3.5.5/COPYING
-  /usr/share/doc/libXpm-3.5.5/COPYRIGHT
-  /usr/share/doc/libXpm-3.5.5/ChangeLog
-  /usr/share/doc/libXpm-3.5.5/Changes
-  /usr/share/doc/libXpm-3.5.5/INSTALL
-  /usr/share/doc/libXpm-3.5.5/html/FAQ.html
-  /usr/share/doc/libXpm-3.5.5/html/README.html
 
-Files included in the runtime library package:
-
-  /usr/bin/cygXpm-4.dll
-
-Files included in the sxpm package:
-
+(sxpm)
   /usr/bin/cxpm.exe
   /usr/bin/sxpm.exe
   /usr/share/man/man1/cxpm.1.gz
@@ -77,6 +79,9 @@ Files included in the sxpm package:
 ------------------
 
 Port Notes:
+
+----- version 3.5.6-1 -----
+X11R7.2 version bump.
 
 ----- version 3.5.5-1 -----
 X11R7.1 version bump.
