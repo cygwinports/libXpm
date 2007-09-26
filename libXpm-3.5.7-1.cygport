@@ -1,0 +1,10 @@
+inherit xorg
+
+HTMLDOCS="FAQ.html README.html"
+
+PKG_NAMES="${PN} ${PN}4 ${PN}-devel sxpm"
+PKG_HINTS="setup runtime devel bin"
+PKG_CONTENTS[0]='usr/share/doc/'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]='usr/include/ usr/lib/'
+PKG_CONTENTS[3]='usr/bin/*.exe usr/share/man/'
