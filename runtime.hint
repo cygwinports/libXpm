@@ -1,5 +1,5 @@
 category: X11 Graphics
 requires: cygwin libX11_6
 external-source: libXpm
-sdesc: "Xorg X Pixmap library (runtime)"
-ldesc: "Xorg X Pixmap library"
+sdesc: "X.Org X Pixmap library (runtime)"
+ldesc: "X.Org X Pixmap library"

@@ -1,0 +1,10 @@
+inherit xorg
+
+HTMLDOCS="FAQ.html README.html"
+
+PKG_NAMES="${PN} ${PN}4 ${PN}-devel sxpm"
+PKG_HINTS="setup runtime devel bin"
+libXpm_CONTENTS=	# empty
+libXpm4_CONTENTS='usr/bin/cygXpm-4.dll usr/share/doc/'
+libXpm_devel_CONTENTS='usr/include/ usr/lib/'
+sxpm_CONTENTS='usr/bin/*.exe usr/share/man/'
