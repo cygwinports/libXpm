@@ -1,5 +1,0 @@
-category: X11 Graphics
-requires: libintl8 libX11_6 libXext6 libXpm4 libXt6
-external-source: libXpm
-sdesc: "X.Org X Pixmap utilities"
-ldesc: "X.Org X Pixmap utilities"

@@ -1,5 +1,0 @@
-category: X11 Graphics
-requires: libX11_6
-external-source: libXpm
-sdesc: "X.Org X Pixmap library (runtime)"
-ldesc: "X.Org X Pixmap library"
